@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f8fafd;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #6d879b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.voltar a {
+  display: inline-flex;
+  gap: 3px;
+  position: absolute;
+  top: 0px;
+  background-color: #0a1a3c;
+  color: white;
+  padding: 5px 10px 5px 30px;
+  font-size: 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-decoration: none;
+}
+
+.descricao {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 17px;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1; 
+}
+
+.descricao-tema {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.descricao-tema h2 {
+  font-size: 22px; 
+  color: #0a1a3c; 
+  margin-bottom: 10px; 
+}
+
+.descricao-tema p {
+  font-size: 16px;
+  color: #333;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.video-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.lgpd-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.lgpd-video {
+  flex: 1 1 45%;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.lgpd-descricao {
+  flex: 1 1 50%;
+  min-width: 300px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .lgpd-container {
+    flex-direction: column;
+  }
+
+  .lgpd-video,
+  .lgpd-descricao {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+}
